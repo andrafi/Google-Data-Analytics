@@ -153,7 +153,7 @@ To convert casual riders into annual members,consider the following recommendati
 4. Seasonal Promotions:
    - Leverage the information about seasonal patterns to launch targeted marketing campaigns. For example, promote annual memberships with special summer offers or incentives during peak riding seasons.
 
-By combining these strategies with a targeted and data-driven marketing approach, you can create a compelling case for casual riders to transition into annual memberships, ultimately increasing customer retention and loyalty
+By combining these strategies with a targeted and data-driven marketing approach, we can create a compelling case for casual riders to transition into annual memberships, ultimately increasing customer retention and loyalty
 
 
 ---
