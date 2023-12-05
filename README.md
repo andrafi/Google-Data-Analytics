@@ -40,7 +40,7 @@ the results stated that there is 6 columns (start_station_id, start_station_name
 
 3. to be sure that there is no incosistencies in ride_id, i validated that there's not any missing character, duplicate values or trailing space in ride_id:
 
-[image](https://github.com/andrafi/Google-Data-Analytics/assets/63025245/ae615084-9ba6-4b1f-90ed-e586e9414da6)
+<img width="134" alt="Screenshot 2023-12-04 061251" src="https://github.com/andrafi/Google-Data-Analytics/assets/63025245/31383a35-4bb4-4041-9ba0-1f86b73af914">
 <img width="233" alt="Screenshot 2023-12-04 061732" src="https://github.com/andrafi/Google-Data-Analytics/assets/63025245/d6f6732c-8caa-4a05-be06-89479f0370f4">
 
 4. found an incosistent and inaccurate datetime format where starting date:hour is bigger than ending date:hour
