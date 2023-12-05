@@ -32,16 +32,19 @@ Incorrect/inacurrate data | Inacurrate insights based on bad information
 Inconsistent Data | Contradictory data point to inability to classify
 
 i've been following this metrics of data validation, first i familiarized myself with column data types
-![[Screenshot 2023-12-04 055409.png]]
+<img width="342" alt="Screenshot 2023-12-04 055409" src="https://github.com/andrafi/Google-Data-Analytics/assets/63025245/be05d42e-45f8-4d8e-8fc5-8dbe37ab1b0b">
+
 2.  identified for the sum of null rows in all of the columns
 ![[Untitled.jpeg]]
 the results stated that there is 6 columns (start_station_id, start_station_name, end_station_id, end_station_name, start_lat, start_lng end_lat and end_lng) where it has some null values.
 
 3. to be sure that there is no incosistencies in ride_id, i validated that there's not any missing character, duplicate values or trailing space in ride_id:
-![[Pasted image 20231204061313.png]]
-![[Pasted image 20231204061736.png]]
+!![image](https://github.com/andrafi/Google-Data-Analytics/assets/63025245/ae615084-9ba6-4b1f-90ed-e586e9414da6)
+<img width="233" alt="Screenshot 2023-12-04 061732" src="https://github.com/andrafi/Google-Data-Analytics/assets/63025245/d6f6732c-8caa-4a05-be06-89479f0370f4">
+
 4. found an incosistent and inaccurate datetime format where starting date:hour is bigger than ending date:hour
-![[Pasted image 20231204061823.png]]
+<img width="135" alt="Screenshot 2023-12-04 061818" src="https://github.com/andrafi/Google-Data-Analytics/assets/63025245/fea847c0-fdcd-419a-9598-5463d99326a9">
+
 Summary:
 	1. Total of 833064 rows in both **start_station_name** and **start_station_id** missing
 	2. Total of 892742 rows in both **end_station_name** and **end_station_id** missing
@@ -62,18 +65,21 @@ SQL Query :
 2. Added day_of_week, month and ride_length as time metrics for the analysis
 3. trips with datetime inaccuracies (started_at > ended_at) are removed
 Results :  1.298.665 rows are deleted 
-![[Pasted image 20231204063846.png]]
+<img width="140" alt="Screenshot 2023-12-04 063645" src="https://github.com/andrafi/Google-Data-Analytics/assets/63025245/f65096ee-c6f5-4df4-ba8e-c22f441d8a0e">
+
 # Analysis & Share
 Following the business task of this project, graphs were created in Tableau after querying the insights needed from Bigquery to enlighten the trends and different behavior of users with different membership status
 ### 1. Cyclistic User Profile
-![[Pasted image 20231202170602.png]]
+![image](https://github.com/andrafi/Google-Data-Analytics/assets/63025245/a8e3145c-0c40-4e12-bbcf-304f4b14c43e)
+
 The first portion of the analysis consisted of this pie and bar charts that offers a various insights about the profile of bike usage in Cyclistic bike Company. First, annual member user has occupied the bigger slice in the first pie charts, they make about 59,8% while the remaining 40,2% consisted of casual rider. 
 
 Second, only casual riders use a docked bike while annual member occupied the biggest number of trips in all of the remaining types of bikes. 
 
 Third, contrary of number of trips grouped by rideable types and the quantity, casual riders has a lot more total and average time usage than annual members.  Casual riders made up about 9.668.630 minutes of total time usage difference with annual members and they have about 92% more average time usage than annual members.
 ### 2. Number of Trips and Average Ride Length by Month
-![[Pasted image 20231202170627.png]]
+![image](https://github.com/andrafi/Google-Data-Analytics/assets/63025245/692ff00a-0650-4050-8991-78ab6f9ec0eb)
+
 Second portion of the analysis are number of trip and average ride length by month. when we look at bar charts above we see that number of trips of annual member users are more consistent than the casual riders. annual members users increasing in frequency of trips since january and peaked at august then gradually decreasing until the end of the year. this convey a seasonal patterns that affects number of trips:
 1. Spring :  Late March to late June, number of trips increase exponentially
 2. Summer : Late June to Late September, number of trips peaked at this season
@@ -82,22 +88,25 @@ Second portion of the analysis are number of trip and average ride length by mon
 
 The same thing happened to casual riders but with less predictable number of trips in season. Contrast to average ride length by month, casual rider is about two times more in average duration than annual members but with frantic duration deviation in january to july.
 ### 3. Number of Trips and Average Ride Length by Day
-![[Pasted image 20231202172029.png]]
+![image](https://github.com/andrafi/Google-Data-Analytics/assets/63025245/77c1aa0f-5005-4425-b04e-d3a221012b6f)
+
 
 Third portion of the analysis consist of total trips and average ride length by day. First line charts above inferred the differences of trips frequency and duration between annual members and casual riders, while casual riders more active during weekend (as highlighted by the label) meaning we can assume that casual rider using bike more frequently for leisure purposes. meanwhile annual members tends to use the bike to commute for work in the weekdays.
 ### 4. Number of Trips and Average Ride Length by Hour
-![[Pasted image 20231202172048.png]]
+![image](https://github.com/andrafi/Google-Data-Analytics/assets/63025245/b0a5982d-8b06-4661-91b5-6b627c1045e7)
 Analyzing total trips and average ride duration by hour we can gather an information about the behavior of Cyclistic usertypes.:
 	1. Casual rider number of trips seems gradually increasing since its lowest point (04.00 o'clock) until it reached its peak in 17.00 in the evening the same can be said for annual members but with increase surge of trips in 08.00 o'clock in the morning. 
 	2. Casual riders tends to commute longer than annual members. However these findings lead to conclusion that annual members used Cyclistic services because of necessity to commute owing to the consistency of the frequency in average ride duration.
 
 ### 5. Station Location Profile
 the last portion of analysis below is to identify the top ten start and end station to further understand the differences between annual members and casual riders.
-![[Pasted image 20231203110244.png]]
+![image](https://github.com/andrafi/Google-Data-Analytics/assets/63025245/92e05027-ee31-4c55-839b-89add6044605)
+
 
 as we can see casual rider leaned to start from the station in the vicinity of recreational points (museum, harbor point, park and beach) on the other hand annual members frequently begun from the station near bank, residential buildings, university, churchs, gyms and offices. 
 
-![[Pasted image 20231203110228.png]]
+![image](https://github.com/andrafi/Google-Data-Analytics/assets/63025245/d1f2120e-bf31-40ac-9db0-059f1a312056)
+
 The same can be said in top ten end station while casual members prefer to end their journey in station that close to recreational sites, annual member more likely frequent in ending their trip to a station that close to residential areas, offices, factory, and others. which means that casual riders tends to use bikes for recreational and leisure activities while annual members largely rely for them for daily commutes.
 
 in summary : 
