@@ -23,6 +23,7 @@ SQL Query : [Data Combining.sql](https://github.com/andrafi/Google-Data-Analytic
 The data is stored in separated csv files, one for each month/year. For this project, 2022 data were used, from January to December, total of 12 .csv files. Considering there's a lot of trip bike CSV files to analyze, i used this query to combine all of the data into one combined data as **Tripbike.2022_tripbike**
 # 3. Process
 ## Data Validation
+SQL Query : [Data Preparation.sql](https://github.com/andrafi/Google-Data-Analytics/blob/main/Data%20Preparation.sql)
 
 Name    |   Potential harm
 ---         |    ---
@@ -65,7 +66,8 @@ here's a recap of my data exploration results
 4. **casual riders has the most time usage**. Meanwhile, **annual member has the most number of trips**.
 
 ## Data Cleaning
-SQL Query :
+SQL Query :[Data Cleaning.sql](https://github.com/andrafi/Google-Data-Analytics/blob/main/Data%20Cleaning.sql)
+
 1. There's about 30% of all rows that has a missing values, to eliminate inaccuracies in the data i removed them
 2. Added day_of_week, month and ride_length as time metrics for the analysis
 3. trips with datetime inaccuracies (started_at > ended_at) are removed
@@ -73,6 +75,7 @@ Results :  1.298.665 rows are deleted
 <img width="140" alt="Screenshot 2023-12-04 063645" src="https://github.com/andrafi/Google-Data-Analytics/assets/63025245/f65096ee-c6f5-4df4-ba8e-c22f441d8a0e">
 
 # Analysis & Share
+SQL Query : [Data Analysis.sql](https://github.com/andrafi/Google-Data-Analytics/blob/main/Data%20Analysis.sql)
 Following the business task of this project, graphs were created in Tableau after querying the insights needed from Bigquery to enlighten the trends and different behavior of users with different membership status
 ### 1. Cyclistic User Profile
 ![image](https://github.com/andrafi/Google-Data-Analytics/assets/63025245/a8e3145c-0c40-4e12-bbcf-304f4b14c43e)
