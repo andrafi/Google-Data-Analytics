@@ -19,7 +19,7 @@ The answer of this question will help and guide the marketing team to create a m
 
 # 2. Prepare
 ## Data Combining
-The data is stored in separated csv files, one for each month/year. For this project, 2022 data were used, from January to December, total of 12 .csv files. Considering there's a lot of trip bike CSV files to analyze, i used this query to combine all of the data into one combined data as `Tripbike.2022_tripbike`
+The data is stored in separated csv files, one for each month/year. For this project, 2022 data were used, from January to December, total of 12 .csv files. Considering there's a lot of trip bike CSV files to analyze, i used this query to combine all of the data into one combined data as **Tripbike.2022_tripbike**
 # 3. Process
 ## Data Validation
 
@@ -35,7 +35,9 @@ i've been following this metrics of data validation, first i familiarized myself
 <img width="342" alt="Screenshot 2023-12-04 055409" src="https://github.com/andrafi/Google-Data-Analytics/assets/63025245/be05d42e-45f8-4d8e-8fc5-8dbe37ab1b0b">
 
 2.  identified for the sum of null rows in all of the columns
-![[Untitled.jpeg]]
+<img width="787" alt="Screenshot 2023-12-05 083615" src="https://github.com/andrafi/Google-Data-Analytics/assets/63025245/9bb0b342-af9d-4171-bcdd-2ed58d07abfb">
+<img width="462" alt="Screenshot 2023-12-05 083633" src="https://github.com/andrafi/Google-Data-Analytics/assets/63025245/e6589358-92ce-49a7-818f-4791a2573601">
+
 the results stated that there is 6 columns (start_station_id, start_station_name, end_station_id, end_station_name, start_lat, start_lng end_lat and end_lng) where it has some null values.
 
 3. to be sure that there is no incosistencies in ride_id, i validated that there's not any missing character, duplicate values or trailing space in ride_id:
@@ -57,8 +59,8 @@ the purpose this data exploration is to gain insights of to help answer the busi
 here's a recap of my data exploration results
 1. identified the quantity of different usertypes (member/casual). There is **3.345.685** casual user and **2.232.032** member user.
 2. **none of member user uses docked bike**. Overall there are more casual user that uses the three types of bikes than member users. Probably because there are more casual user than member user
-3. docked bike has the most time usage than the other bike types, on the other hand electric bike has the most number of trips.
-4. casual user has the most time usage than member user. on the contrary, member user has the most number of trips than casual user.
+3. **docked bike has the most time usage** than the other bike types, on the other hand **electric bike has the most number of trips**.
+4. **casual riders has the most time usage**. Meanwhile, **annual member has the most number of trips**.
 
 ## Data Cleaning
 SQL Query :
