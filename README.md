@@ -1,7 +1,6 @@
 # Google-Data-Analytics
 311020231919
-status :  on progress
-Tags :
+
 # Introduction
 this is markdown for my progress in learning data analytics. this time i will analyze dataset from a fictional company called cyclist. in order answer business questions. six steps of data analytics from google data analytics professional certification were implemented in this project
 # Background
@@ -31,7 +30,8 @@ Incomplete Data | Decreased Productivity or decision making
 Incorrect/inacurrate data | Inacurrate insights based on bad information
 Inconsistent Data | Contradictory data point to inability to classify
 
-i've been following this metrics of data validation, first i familiarized myself with column data types
+Following this metrics of data validation, below are the steps i take to ensure seamless analytic process
+1. i familiarized myself with column data types
 <img width="342" alt="Screenshot 2023-12-04 055409" src="https://github.com/andrafi/Google-Data-Analytics/assets/63025245/be05d42e-45f8-4d8e-8fc5-8dbe37ab1b0b">
 
 2.  identified for the sum of null rows in all of the columns
@@ -113,15 +113,43 @@ as we can see casual rider leaned to start from the station in the vicinity of r
 The same can be said in top ten end station while casual members prefer to end their journey in station that close to recreational sites, annual member more likely frequent in ending their trip to a station that close to residential areas, offices, factory, and others. which means that casual riders tends to use bikes for recreational and leisure activities while annual members largely rely for them for daily commutes.
 
 in summary : 
-1. Casual riders tends to ride two times longer than annual members with the average of >20 minutes on the bike but less frequent in their trips 
-2. Seasonal Pattern affects number of trips. number of trips peaked in summer of all of the usertypes 
-4. Annual members has a surge of trips during 8 AM and 5 PM while casual riders has gradual increase of number of trips since 4 AM until peaked at 5 PM 
-5. Casual riders start and end their trips near recreational sites while annual members usually start and end their trips close to residential buildings, offices, and university
+    a. **Riding Duration and Frequency**:
+        Casual riders tend to ride longer, averaging more than 20 minutes on the bike.
+        Annual members, while riding shorter durations, are more frequent in their trips.
+    b. **Seasonal Patterns**:
+        Both user types show a peak in the number of trips during the summer season.
+    c. **Time-of-Day Patterns**:
+        Annual members have a surge in trips during the typical rush hours (8 AM and 5 PM).
+        Casual riders exhibit a gradual increase in the number of trips starting from 4 AM, peaking at 5 PM.
+    d. **Trip Starting and Ending Locations**:
+        Casual riders start and end their trips near recreational sites.
+        Annual members typically start and end their trips close to residential buildings, offices, and universities.
 Conclusion:
-	Annual members extensively use bikes for daily commute while casual rider tend to use bike for leisure and recreational purpose
+Annual members seem to primarily use bikes for daily commuting, evident from the surge during typical work commute hours and the locations close to residential and office areas. Casual riders, on the other hand, appear to use bikes more for leisure and recreational purposes, given the longer ride durations, starting and ending locations near recreational sites, and the gradual increase in trips throughout the day.
+These conclusions provide insights into the different usage patterns and purposes of bike-sharing services for annual members and casual riders
+
 # ACT
 ### Final Conclusion
 Converting casual riders to annual members can be effectively implemented by aiming at casual riders behavior on leisure commuting. Also, the fact that casual riders tend to commute longer more than 15 minutes and mostly active on weekend can be one of the focus in the act of marketing strategies.
+
+### Recommendation
+To convert casual riders into annual members,consider the following recommendations for further analysis and targeted marketing strategies:
+1. Behavioral Analysis:
+   - Conduct a detailed analysis of the specific recreational sites where casual riders tend to start and end their trips.
+   -  Identify patterns and preferences in these locations.
+   -   Analyze the time distribution of casual riders' trips during the day to understand if there are specific time slots that attract more casual riders.
+2. Promotions and Incentives:
+   - Offer time-limited promotions or discounts for casual riders who transition to annual memberships.
+   - Highlight the cost savings and benefits of becoming a member.
+   - Implement loyalty programs or rewards for consistent usage, encouraging casual riders to commit to a longer-term membership.
+3. User Experience Enhancement:
+   - Gather feedback from both casual riders and annual members to identify any barriers or challenges faced by casual riders. Improve the user experience based on this feedback.
+   - Consider introducing features or services that specifically cater to the needs and preferences of casual riders, making the membership more appealing to them.
+4. Seasonal Promotions:
+   - Leverage the information about seasonal patterns to launch targeted marketing campaigns. For example, promote annual memberships with special summer offers or incentives during peak riding seasons.
+
+By combining these strategies with a targeted and data-driven marketing approach, you can create a compelling case for casual riders to transition into annual memberships, ultimately increasing customer retention and loyalty
+
 
 ---
 
