@@ -18,7 +18,7 @@ The answer of this question will help and guide the marketing team to create a m
 
 # 2. Prepare
 ## Data Combining
-SQL Query : [Data Combining.sql]
+SQL Query : [Data Combining.sql](https://github.com/andrafi/Google-Data-Analytics/blob/main/Data%20Combining.sql)
 
 The data is stored in separated csv files, one for each month/year. For this project, 2022 data were used, from January to December, total of 12 .csv files. Considering there's a lot of trip bike CSV files to analyze, i used this query to combine all of the data into one combined data as **Tripbike.2022_tripbike**
 # 3. Process
